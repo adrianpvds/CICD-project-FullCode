@@ -9,9 +9,12 @@ from pathlib import Path
 import mlflow
 import os 
 import json
+import sys
 
 def parse_args():
     '''Parse input arguments'''
+
+    print("Command-line arguments:", sys.argv)
     print("starting parse")
 
     parser = argparse.ArgumentParser()
