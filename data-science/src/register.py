@@ -27,8 +27,10 @@ def main(args):
 
     print("Registering ", args.model_name)
 
-
     # -----------  WRITE YOR CODE HERE -----------
+    
+    print(args.model_path)
+    print(args.model_info_output_path)
     
     # Step 1: Load the model from the specified path using `mlflow.sklearn.load_model` for further processing.  
     
