@@ -72,6 +72,7 @@ jobs:
     display_name: register-the-best-model  # Provide the display name for the job
     code: ../../../data-science/src
     command: >-
+      echo ${{parent.jobs.sweep_step.outputs.model_output}} &&
       python register.py
       --model_name ${{inputs.model_name}}
       
