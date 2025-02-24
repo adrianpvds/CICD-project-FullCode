@@ -5,7 +5,6 @@ channels:
 dependencies:
   - python=3.7.5
   - pip
-  - mlflow
   - pip:
       - azureml-mlflow==1.38.0
       - azure-ai-ml==1.0.0
