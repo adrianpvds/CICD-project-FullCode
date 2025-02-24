@@ -12,13 +12,13 @@ import json
 
 def parse_args():
     '''Parse input arguments'''
-    print("starting")
+    print("starting parse")
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_name', type=str, help='Name under which model will be registered')  # Hint: Specify the type for model_name (str)
     parser.add_argument('--model_path', type=str, help='Model directory')  # Hint: Specify the type for model_path (str)
     parser.add_argument("--model_info_output_path", type=str, help="Path to write model info JSON")  # Hint: Specify the type for model_info_output_path (str)
-    args, _ = parser.parse_known_args()
+    args = parser.parse_args()
     print(f'Arguments: {args}')
 
     return args
@@ -63,8 +63,9 @@ def main(args):
 
 if __name__ == "__main__":
     
+    print("starting run")
     mlflow.start_run()
-    
+    print("run started")
     # Parse Arguments
     args = parse_args()
     
