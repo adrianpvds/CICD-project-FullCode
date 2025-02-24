@@ -44,7 +44,7 @@ def main(args):
     
     # Step 3: Split the data into features (X) and target (y) for both train and test datasets. Specify the target column name.
     
-    target_column = 'price'  # Adjust 'target' to your actual target column name
+    target_column = 'price'
     y_train = train_df[target_column]
     X_train = train_df.drop(columns=[target_column])
     y_test = test_df[target_column]
