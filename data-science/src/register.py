@@ -3,7 +3,7 @@
 """
 Registers the best-trained ML model from the sweep job.
 """
-#!/bin/bash
+
 import argparse
 from pathlib import Path
 import mlflow
@@ -12,6 +12,7 @@ import json
 
 def parse_args():
     '''Parse input arguments'''
+    print("starting")
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_name', type=str, help='Name under which model will be registered')  # Hint: Specify the type for model_name (str)
