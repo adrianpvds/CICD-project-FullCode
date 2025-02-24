@@ -1,4 +1,3 @@
-!/bin/bash
 $schema: https://azuremlschemas.azureedge.net/latest/pipelineJob.schema.json
 type: pipeline
 display_name: used-cars-pricing-model-training-pipeline  # Provide the display name for the pipeline
