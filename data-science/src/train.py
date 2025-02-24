@@ -72,7 +72,7 @@ def main(args):
     print(args.model_output)
 
     mlflow.log_metric("mse", float(mse))
-    mlflow.sklearn.log_model(model, args.model_output)
+    mlflow.sklearn.log_model(sk_model = model, path = args.model_output)
     
     print("success")
 
