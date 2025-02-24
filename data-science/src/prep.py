@@ -52,7 +52,7 @@ def main(args):  # Write the function name for the main data preparation logic
     # Step 4: Log the number of rows in the training and testing datasets as metrics for tracking and evaluation.  
     
     mlflow.log_metric("num_training_samples", len(train_df))
-    mlflow.log_metric("num_test_samples", len(test_df))
+    mlflow.log_metric("num_testing_samples", len(test_df))
 
 
 if __name__ == "__main__":
