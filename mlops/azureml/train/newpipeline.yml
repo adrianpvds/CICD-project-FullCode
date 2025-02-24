@@ -72,7 +72,7 @@ jobs:
     display_name: register-the-best-model  # Provide the display name for the job
     code: ../../../data-science/src
     command: >-
-      echo ${{inputs.model_name}} &&
+      echo ${{inputs.model_name}}
       
     environment: azureml:used-cars-train-env@latest
     inputs:
