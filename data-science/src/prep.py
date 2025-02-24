@@ -34,7 +34,7 @@ def main(args):  # Write the function name for the main data preparation logic
 
     # Step 1: Perform label encoding to convert categorical features into numerical values for model compatibility.
     
-    le - LabelEncoder()
+    le = LabelEncoder()
     df['Segment'] = le.fit_transform(df['Segment'])
     
     # Step 2: Split the dataset into training and testing sets using train_test_split with specified test size and random state.  
