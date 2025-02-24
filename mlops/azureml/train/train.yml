@@ -11,11 +11,11 @@ inputs:
     type: integer  
     default: 100 
   max_depth:
-    type: int  # Specify the type for max_depth
-    default: 20  # Provide the default value for max_depth
+    type: integer  # Specify the type for max_depth
+    default: None  # Provide the default value for max_depth
 outputs:
   model_output:
-    type: str  # Specify the type for model_output
+    type: mlflow_model  # Specify the type for model_output
 code: ../../../data-science/src
 command: >-
   python train.py 
