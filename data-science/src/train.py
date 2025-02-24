@@ -67,10 +67,14 @@ def main(args):
     mse = mean_squared_error(y_test, yhat_test)
     print('Mean squared error: {:.2f}'.format(mse))
     
-    # Step 7: Log the MSE metric in MLflow for model evaluation, and save the trained model to the specified output path.  
+    # Step 7: Log the MSE metric in MLflow for model evaluation, and save the trained model to the specified output path. 
+    
+    print(args.model_output)
 
     mlflow.log_metric("mse", float(mse))
     mlflow.sklearn.log_model(model, args.model_output)
+    
+    print("success")
 
 if __name__ == "__main__":
     
