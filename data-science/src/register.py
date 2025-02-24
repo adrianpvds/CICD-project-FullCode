@@ -3,7 +3,7 @@
 """
 Registers the best-trained ML model from the sweep job.
 """
-
+#!/bin/bash
 import argparse
 from pathlib import Path
 import mlflow
