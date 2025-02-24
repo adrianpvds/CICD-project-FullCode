@@ -72,7 +72,6 @@ jobs:
     display_name: register-the-best-model  # Provide the display name for the job
     code: ../../../data-science/src
     command: >-
-      echo "Model Path: ${{inputs.model_path}}" &&
       python register.py 
       --model_name ${{inputs.model_name}} 
       --model_path ${{inputs.model_path}} 

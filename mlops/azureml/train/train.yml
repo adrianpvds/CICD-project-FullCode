@@ -18,7 +18,6 @@ outputs:
     type: uri_file  # Specify the type for model_output
 code: ../../../data-science/src
 command: >-
-  echo "model_output ${{outputs.model_output}}" &&
   python train.py 
   --train_data ${{inputs.train_data}}
   --test_data ${{inputs.test_data}}
