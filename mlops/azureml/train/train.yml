@@ -1,5 +1,5 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandComponent.schema.json
-type: sweep  # This is correct for trial definitions
+type: command  # This is correct for trial definitions
 name: train_model
 display_name: train_model
 inputs: 
@@ -12,7 +12,7 @@ inputs:
     default: 100 
   max_depth:
     type: int  # Specify the type for max_depth
-    default: None  # Provide the default value for max_depth
+    default: 20  # Provide the default value for max_depth
 outputs:
   model_output:
     type: str  # Specify the type for model_output
