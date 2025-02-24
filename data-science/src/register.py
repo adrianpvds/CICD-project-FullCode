@@ -52,7 +52,8 @@ def main(args):
         "model_version": model_version,
         "model_path": args.model_path
     }
-    with open(args.model_info_output_path, 'w') as f:
+    output_info_path = os.path.join(args.model_info_output_path, "model_info.json")
+    with open(output_info_path, 'w') as f:
         json.dump(model_info, f, indent=4)
     print(f"Model registered under version: {model_version}")
 
